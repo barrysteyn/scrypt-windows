@@ -10,7 +10,6 @@
 				'scrypt-1.1.6',
 				'scrypt-1.1.6/lib/util',
 				'scrypt-1.1.6/lib/crypto',
-				'win/include'
 				'scrypt-1.1.6/lib/scryptenc',
 			],
 			'sources': [
@@ -21,19 +20,17 @@
 			'conditions': [
 				[
 					'OS == "win"', { 
-						'msvs_settings' : {
-							'VCCLCompilerTool' : {
-								'AdditionalOptions' : ['/TC']
-							}
-						},
+						#'msvs_settings' : {
+						#	'VCCLCompilerTool' : {
+						#		'AdditionalOptions' : ['/TC']
+						#	}
+						#},
 						'libraries': [
 							'-lC:/OpenSSL-Win32/lib/libeay32.lib',
 						],
 						'include_dirs': [
+							'win/include',
 							'C:/OpenSSL-Win32/include',
-						],
-						'defines': [
-							'WIN',
 						],
 					},
 				]

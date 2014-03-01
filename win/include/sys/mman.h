@@ -13,6 +13,8 @@
 /* All the headers include this file. */
 #ifndef _MSC_VER
 #include <_mingw.h>
+#else
+#include "inttypes.h"
 #endif
 
 #include <sys/types.h>
