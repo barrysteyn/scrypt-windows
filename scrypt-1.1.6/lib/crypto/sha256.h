@@ -45,8 +45,8 @@ typedef struct HMAC_SHA256Context {
 } HMAC_SHA256_CTX;
 
 void	SHA256_Init(SHA256_CTX *);
-void	SHA256_Update(SHA256_CTX *, const void *, size_t);
-void	SHA256_Final(unsigned char [32], SHA256_CTX *);
+void	scrypt_SHA256_Update(SHA256_CTX *, const void *, size_t);
+void	scrypt_SHA256_Final(unsigned char [32], SHA256_CTX *);
 void	HMAC_SHA256_Init(HMAC_SHA256_CTX *, const void *, size_t);
 void	HMAC_SHA256_Update(HMAC_SHA256_CTX *, const void *, size_t);
 void	HMAC_SHA256_Final(unsigned char [32], HMAC_SHA256_CTX *);

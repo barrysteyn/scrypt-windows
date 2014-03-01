@@ -21,13 +21,13 @@
 				'scrypt-1.1.6',
 				'scrypt-1.1.6/lib/util',
 				'scrypt-1.1.6/lib/crypto',
-				'win/include'
+				#'win/include'
 				#'scrypt-1.1.6/lib/scryptenc',
 			],
 			'sources': [
 				'scrypt-1.1.6/lib/crypto/crypto_scrypt-sse.c',
 				'scrypt-1.1.6/lib/crypto/sha256.c',
-				'win/mman.c'
+				#'win/mman.c'
 			],
 		},
 	],
